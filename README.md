@@ -97,14 +97,15 @@ cd gstack
 
 详细安装步骤: [global-skills/gstack/INSTALL.md](./global-skills/gstack/INSTALL.md)
 
-### get-shit-done (GSD)
+### Get Shit Done (GSD)
 
 完整的 AI 辅助开发框架，提供项目管理、阶段规划、执行验证等企业级工作流。
+
+**GitHub**: https://github.com/gsd-build/get-shit-done
 
 **安装位置**: `~/.claude/skills/get-shit-done/` 或 `~/.config/opencode/skills/get-shit-done/`
 
 ```bash
-# 克隆到全局目录
 cd ~/.claude/skills
 git clone https://github.com/gsd-build/get-shit-done.git
 cd get-shit-done
@@ -114,6 +115,54 @@ npm install
 **主要命令**: `/gsd-new-project`, `/gsd-plan-phase`, `/gsd-execute-phase`, `/gsd-ship`
 
 详细安装步骤: [global-skills/get-shit-done/INSTALL.md](./global-skills/get-shit-done/INSTALL.md)
+
+详细文档: [docs/get-shit-done.md](./docs/get-shit-done.md)
+
+### OpenSpec
+
+规范驱动开发工具，用于定义和管理 API 规范、项目规范。
+
+**GitHub**: https://github.com/Fission-AI/OpenSpec
+
+**安装位置**: `~/.claude/skills/openspec/` 或 `~/.config/opencode/skills/openspec/`
+
+```bash
+cd ~/.claude/skills
+git clone https://github.com/Fission-AI/OpenSpec.git
+```
+
+详细文档: [docs/openspec.md](./docs/openspec.md)
+
+### Spec Kit
+
+GitHub 官方规范工具，用于项目规范和文档管理。
+
+**GitHub**: https://github.com/github/spec-kit
+
+**安装位置**: `~/.claude/skills/spec-kit/` 或 `~/.config/opencode/skills/spec-kit/`
+
+```bash
+cd ~/.claude/skills
+git clone https://github.com/github/spec-kit.git
+```
+
+详细文档: [docs/spec-kit.md](./docs/spec-kit.md)
+
+### UI UX Pro Max
+
+UI/UX 设计智能工具，提供可搜索的设计数据库和设计系统生成。
+
+**GitHub**: https://github.com/obra/ui-ux-pro-max
+
+**安装方式**: npm 全局安装
+
+```bash
+npm install -g ui-ux-pro-max
+```
+
+或项目级安装（已包含在 `.opencode/skills/ui-ux-pro-max/`）。
+
+详细文档: [docs/ui-ux-pro-max.md](./docs/ui-ux-pro-max.md)
 
 ---
 
@@ -139,9 +188,15 @@ ai-coding-config/
 ├── opencode.json               # 复制到项目根目录
 ├── AGENTS.md                   # 复制到项目根目录
 ├── README.md                   # 本文档
+├── skills.md                   # Skills 索引
 ├── docs/                       # Skills 详细文档
+│   ├── AI-AGENTS.md            # AI 目录说明
+│   ├── openCode.md             # OpenCode 配置笔记
 │   ├── gstack.md
 │   ├── get-shit-done.md
+│   ├── openspec.md
+│   ├── spec-kit.md
+│   ├── ui-ux-pro-max.md
 │   ├── pua.md
 │   └── ...
 ├── global-skills/              # 全局安装说明（不需要复制）
